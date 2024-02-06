@@ -10,20 +10,29 @@
 </head>
 
 <body>
+    <!-- Reproductor de audio oculto -->
+    <audio id="audio" src="" autoplay loop style="display:none"></audio>
+
     <div class="container">
         <div class="Mainprompt">
             <h1 class="hh" id="name">Hola mi reinita preziosa!</h1>
-            <img class="image" src="images/flormichi.jpg" />
+            <p class="pps" id="question7" style="display: none;">¿Mi daresti l'onore di essere il mio Valentino?</p>
+            <img class="image" src="images/taylorheart.gif" />
             <p class="pp" id="question1">Mi ratita bonita</p>
             <p class="pp" id="question2" style="display: none;">Mi enrabiosita</p>
-            <p class="pp" id="question3" style="display: none;">Il mio cuore di meloncito</p>
-            <p class="pp" id="question4" style="display: none;">Mi daresti l'onore di essere il mio Valentino?</p>
+            <p class="pp" id="question3" style="display: none;">Mi corazón de meloncito</p>
+            <p class="pp" id="question4" style="display: none;">Mi pequeña esponjita</p>
+            <p class="pp" id="question5" style="display: none;">Me estaba preguntando</p>
+            <p class="pp" id="question6" style="display: none;">Si hay tantas formas de nombrarte, solo me falta una...
+            </p>
+            <p class="pp" id="question4.1" style="display: none;">Elige sabiamente</p>
             <div class="hidden-message" id="no-message">
-                <p>Non sfuggirai facilmente a bambucito!!😤😤</p>
+                <p>No escaparás fácilmente de Bambucito!! 😤😤</p>
             </div>
             <div class="hidden-message" id="yes-message">
-                <p>Meraviglioso tesoro, sapevo che non avresti resistito.</p>
-                <p>Ci vediamo il 14, mio pandita 😘😘</p>
+                <br>
+                <p>Maravilloso mi tesorito, sabía que no podrías resistirte.</p>
+                <p>Nos vemos el 14, mi pandita 😘😘</p>
             </div>
             <div class="buttons">
                 <button id="no-button" onclick="showMessage('No')" style="display: none;">No</button>
