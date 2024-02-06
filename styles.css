@@ -1,0 +1,99 @@
+body {
+    font-family: 'Times New Roman', cursive;
+    /* Change to a romantic cursive font */
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0;
+    background: url('images/babyblue.jpg') repeat;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.hh {
+    -webkit-text-stroke: 1px #0d91dd;
+    font-weight: 900;
+}
+
+.pp {
+    -webkit-text-stroke: 2px #0d91dd;
+    font-size: 60px;
+    font-style: oblique;
+    font-weight: 800;
+}
+
+body .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+    height: 280px;
+}
+
+.buttons button {
+    background-color: #0d91dd;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Times New Roman', cursive;
+    /* Change to a romantic cursive font */
+}
+
+.buttons button:hover {
+    background-color: #0a72ad;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hidden-message {
+    display: none;
+    -webkit-text-stroke: 2px #0d91dd;
+    font-size: 60px;
+    font-style: oblique;
+    font-weight: 800;
+}
+
+.move {
+    animation: moveNoMessage 0.5s linear;
+}
+
+@keyframes moveNoMessage {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(30px, 30px);
+    }
+
+    50% {
+        transform: translate(-20px, -20px);
+    }
+
+    75% {
+        transform: translate(10px, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
