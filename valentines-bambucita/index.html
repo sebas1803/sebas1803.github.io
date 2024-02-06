@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/corazonblanco.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>San Valentino con Bambucita</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Mainprompt">
+            <h1 class="hh" id="name">Hola mi reinita preziosa!</h1>
+            <img class="image" src="images/flormichi.jpg" />
+            <p class="pp" id="question1">Mi ratita bonita</p>
+            <p class="pp" id="question2" style="display: none;">Mi enrabiosita</p>
+            <p class="pp" id="question3" style="display: none;">Il mio cuore di meloncito</p>
+            <p class="pp" id="question4" style="display: none;">Mi daresti l'onore di essere il mio Valentino?</p>
+            <div class="hidden-message" id="no-message">
+                <p>Non sfuggirai facilmente a bambucito!!😤😤</p>
+            </div>
+            <div class="hidden-message" id="yes-message">
+                <p>Meraviglioso tesoro, sapevo che non avresti resistito.</p>
+                <p>Ci vediamo il 14, mio pandita 😘😘</p>
+            </div>
+            <div class="buttons">
+                <button id="no-button" onclick="showMessage('No')" style="display: none;">No</button>
+                <button onclick="showMessage('Yes')" id="yesButton" style="display: none;">Si</button>
+                <button id="nextButton" onclick="showNextQuestion()">Seguente</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
